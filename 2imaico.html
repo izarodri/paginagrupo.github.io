@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="iconme.png">
+    <title>Estrutura Básica HTML</title>
+
+    <img src="logohtml.png" alt="Logo Pagina" >
+
+    
+        <input type="checkbox" id="checkbox">
+<a href="#"><label class="btn" for="checkbox">TUTORIAL</label></a>
+
+<div class="sidebar">
+    <ul>
+        <a href="index.html" ><li><i class="fa"></i>Introdução</li></a>
+        <a href="1pri.html" ><li><i class="fa"></i>Primeiros Passos HTML</li></a>
+        <a href="2imaico.html" class="active" ><li><i class="fa"></i>Estrutura Básica</li></a>
+        <a href="3hierar.html"><li><i class="fa"></i>Tags para Inserir Conteúdo</li></a>
+        <a href="5lis.html"><li><i class="fa"></i>Tabelas</li></a>
+        <a href="css.html"><li><i class="fa"></i>CSS Básico</li></a>
+        <a href="4forma.html"><li><i class="fa"></i>EXERCÍCIOS</li></a>
+    
+        
+    </ul>
+</div>
+  
+</head>
+<main>
+    <section>
+        <article style="border: 30px; display: inline-block;">
+            <h1><b>ESTRUTURA BÁSICA</b></h1>
+            <div class="hubt" >
+                <div class="ez-toc-title-container"></div>
+                <p class="ticon"><b>Conteúdo</b></p>
+                <span class="ez-toc-title-toggle"></span>
+                <nav class="conteudo">
+                    <ul>
+                        <li><a href="#1" class="conteudo">Tags que Formam a Estrutura do Arquivo</a></li>
+                        <li><a href="#2" class="conteudo">Tags Utilizadas na Estrutura do Código</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </article>
+
+       <article>
+
+        <h3 id="1">Tags que Formam a Estrutura do Arquivo</h3>
+        <p>Algumas tags são responsáveis por formar a estrutura de um arquivo HTML. 
+            Na versão 5, o documento padrão vai receber a estrutura apresentada abaixo:</p>
+        
+        <pre>
+            <code> 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+     &lt;title&gt;T&iacute;tulo da p&aacute;gina&lt;/title&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt; 
+</code>
+        </pre>
+
+        <p>Mas afinal, qual o objetivo que cada uma? Vamos descobrir por partes.
+        </p>
+
+        <ul>
+            <li><code> &lt!DOCTYPE html&gt</code>  – A tag !DOCTYPE é utilizada para informar ao navegador a versão do HTML que está sendo
+                 usada no documento. Ao especificar a versão do HTML correta, o navegador pode interpretar o conteúdo do 
+                 documento com mais precisão. Por exemplo, no HTML5, basta incluir a tag !DOCTYPE html para indicar que o 
+                 documento está na versão HTML5 e o navegador poderá interpretá-lo corretamente.
+            </li>
+            <li><code>&lthtml&gt&lt/html&gt</code> - Esta tag é o elemento fundamental da estrutura do HTML e deve conter todos os elementos
+                 do documento. É importante observar que todo documento HTML deve começar com essa tag de abertura e 
+                 terminar com a tag de fechamento correspondente.
+            </li>
+            <li><code>&lthead&gt&lt/ head&gt</code> – Essa tag delimita o cabeçalho do documento. Não possui nenhum valor visível, porém é capaz de 
+                transmitir ao navegador diversas informações muito úteis e essenciais a uma boa apresentação do seu documento HTML;</li>
+            <li> <code>&lttitle&gt&lt/ title&gt</code> – Esta tag define o título da página, que é exibido na aba, janela ou guia do navegador. Por essa 
+                razão, a tag  <code>&lttitle&gt</code> é de extrema importância para o SEO (otimização de mecanismos de busca), pois ajuda os
+                 mecanismos de busca a entender o conteúdo da página e apresentá-la aos usuários relevantes.</li>
+            <li><code>&ltmeta/></code> – Esta tag permite inserir metadados no documento HTML, como informações sobre o autor, descrição da página,
+                 palavras-chave e codificação de caracteres. No exemplo citado, a informação "charset='UTF-8'" garante a compatibilidade
+                  do código com os caracteres de padrão latino-americano, permitindo que os caracteres acentuados e outros caracteres 
+                  especiais sejam exibidos corretamente no navegador.
+            </li>
+            <li><code>&ltbody&gt&lt/body&gt</code>– Esta tag representa o corpo do documento HTML e é onde todos os elementos visíveis do site devem ser
+                 inseridos. É dentro dessa tag que o conteúdo principal da página é colocado, como textos, imagens, vídeos e outros 
+                 elementos visuais que serão exibidos no navegador.
+
+            </li>
+        </ul>
+       </article>
+
+       <article>
+        <h3 id="2">Tags Utilizadas na Estrutura do Código</h3>
+        <p>As tags abaixo são utilizadas em documentos HTML5 e têm uma função estrutural importante no código. Elas são cruciais para a 
+            semântica da página e saber como utilizá-las adequadamente pode melhorar a visualização da página pelo navegador e 
+            pelo usuário, além de proporcionar uma otimização para os processos de SEO.</p>
+
+        <ul>
+            <li><code>&ltheader&gt</code>: define o cabeçalho da página, que normalmente inclui o título, logotipo e links de navegação;</li>
+            <li><code>&ltnav&gt</code>: define uma seção de navegação, que pode incluir links para outras páginas ou seções do site;</li>
+            <li><code>&ltmain&gt</code>: define a seção principal da página, que geralmente contém o conteúdo principal;
+            </li>
+            <li><code>&ltarticle&gt</code>: define uma seção de conteúdo autônomo que pode ser compartilhada ou reutilizada separadamente do restante da página;
+            </li>
+            <li><code>&ltaside&gt</code>: define uma seção de conteúdo relacionado, que pode incluir links, anúncios ou informações adicionais;
+            </li>
+            <li><code>&ltfooter&gt</code>: define o rodapé da página, que normalmente inclui informações de contato, direitos autorais e links úteis.
+            </li>
+        </ul>
+
+        <p>Ao utilizar essas tags de forma adequada, é possível criar uma estrutura clara e semântica para a página, facilitando a compreensão do conteúdo pelo usuário e melhorando a indexação nos motores de busca.
+        </p>
+
+       </article>
+
+       <article >
+        <div class="btna nextprev">
+                 <a href="1pri.html"><button class="light pbnt"> Anterior</button></a>
+                 <a href="3hierar.html"><button hret="1pri.html" class="depois pbnt">Proximo</button></a>
+             </div>
+         </article>
+
+        
+    </section>
+</main>
+<footer>
+    <h4>Principais Referências</h4>
+    
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes">Atributos - HTML: Linguagem de Marcação de Hipertexto | MDN.</a></p>
+    <p><a href="https://www.homehost.com.br/blog/tutoriais/tags-html">MARQUES, R. Tags HTML: as principais tags para criar sua página HTML.</a></p>
+
+   <p style="margin-top: 50px;">HTML Tutorial - 2023</p>
+</footer>
+</html>

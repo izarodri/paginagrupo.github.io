@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="iconme.png">
+    <title>Primeiros Passos HTML</title>
+
+    <img src="logohtml.png" alt="Logo Pagina" >
+
+    
+        <input type="checkbox" id="checkbox">
+<a href="#"><label class="btn" for="checkbox">TUTORIAL</label></a>
+
+<div class="sidebar">
+    <ul>
+        <a href="index.html"  ><li><i class="fa"></i>Introdução</li></a>
+        <a href="1pri.html" class="active"><li><i class="fa"></i>Primeiros Passos HTML</li></a>
+        <a href="2imaico.html"><li><i class="fa"></i>Estrutura Básica</li></a>
+        <a href="3hierar.html"><li><i class="fa"></i>Tags para Inserir Conteúdo</li></a>
+        <a href="5lis.html"><li><i class="fa"></i>Tabelas</li></a>
+        <a href="css.html"><li><i class="fa"></i>CSS Básico</li></a>
+        <a href="4forma.html"><li><i class="fa"></i>EXERCÍCIOS</li></a>
+        
+    </ul>
+</div>
+  
+</head>
+<main>
+    <section>
+        <article style="border: 30px; display: inline-block;">
+            <h1><b>PRIMEIROS PASSOS</b></h1>
+
+            <div class="hubt" >
+                <div class="ez-toc-title-container"></div>
+                <p class="ticon"><b>Conteúdo</b></p>
+                <span class="ez-toc-title-toggle"></span>
+                <nav class="conteudo">
+                    <ul>
+                        <li><a href="#1" class="conteudo">O Que São Tags HTML?</a></li>
+                        <li><a href="#2" class="conteudo">Atributos HTML</a></li>
+                    </ul>
+                </nav>
+             </div>
+
+            </article>
+
+        
+        <article>
+            <h3 id="1"> O Que São Tags HTML?</h3>
+
+            <p>As tags são utilizadas para informar ao navegador a estrutura do site. Elas serão interpretadas pelo navegador, estabelecendo a estrutura e o conteúdo visual da página.
+                Elas são caracterizadas por estarem sempre dentro dos sinais “maior que” e “menor que” 
+                (&lt;&gt;).</p>
+                <p> As tags que precisam de fechamento possuem a sintaxe <code>&lt;tag&gt;</code> <code>&lt;/tag&gt;</code> , e as que não possuem fechamento 
+                <code></code> Uma única tag pode receber varios atributos, que terá um valor que poderá modificar sua estrutura ou funcionalidade.
+            </p>
+            <p>Uma única tag pode receber varios atributos, que terá um valor que poderá modificar sua estrutura ou funcionalidade.
+            </p>
+    
+           <h3 id="2"> Atributos HTML</h3>
+           <p>Os atributos são os responsáveis por personalizar as tags, e são utilizados para atribuir uma classe ou id a algum elemento.
+            As tags possuem seus próprios atributos no geral, porém existem atributos genéricos que são usados em grande parte das tags. Observe na tabela:
+            </p>
+    
+            <table>
+                <tr>
+                    <th>NOME DO ATRIBUTO</th>
+                    <th>ELEMENTOS</th>
+                    <th>FUNCIONALIDADES</th>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>class</code> </td>
+                    <td>Global attribute</td>
+                    <td>Usado com CSS para estilizar os elementos com propriedades comuns.</td>
+                </tr>
+                <tr>
+                   <td class="tdn"><code>id</code></td>
+                   <td>Global attribute</td>
+                   <td>Usado com CSS para estilizar um elemento específico. O valor deste atributo deve ser único.</td> 
+                </tr>
+                <tr>
+                    <td class="tdn"><code>style</code></td>
+                    <td>Global attribute</td>
+                    <td>Permite a utilização de elementos de estilos CSS dentro das tags.</td>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>lang</code></td>
+                    <td>Global attribute</td>
+                    <td>Define o idioma usado no elemento.</td>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>title</code></td>
+                    <td>Global attribute</td>
+                    <td>Define o título do elemento.</td>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>alt</code></td>
+                    <td> <code>&lt;applet&gt;,</code> <code>&lt;area&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;input&gt;</code>, </td>
+                    <td>Texto alternativo caso uma imagem não possa ser exibida.</td>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>hidden</code></td>
+                    <td>Global attribute</td>
+                    <td>Indica a relevância de um elemento.</td>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>align</code></td>
+                    <td><code>&lt;applet&gt;</code>, <code>&lt;caption&gt;</code>, <code>&lt;col&gt;</code>, <code>&lt;colgroup&gt;</code>, <code>(en-US)</code>, <code>&lt;hr&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;table &gt;</code>, <code>&lt;tbody&gt;</code>,
+                       <code>(en-US)</code>, <code>&lt;td&gt;</code>, <code>(en-US)</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;thead&gt;</code>, <code>(en-US)</code>, <code>&lt;tr&gt;</code>,  </td>
+                    <td>Especifica o alinhamento horizontal do elemento. Exemplos: <code>right</code>, <code>center</code>, <code>left</code> e <code>justify</code>. </td>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>width</code></td>
+                    <td><code>&lt;canvas&gt;</code>, <code> &lt;embed&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;object&gt;</code>, <code>(en-US)</code>, <code>&lt;video&gt;</code>. </td>
+                    <td> Define uma largura para o elemento.</td>
+                </tr>
+                <tr>
+                    <td class="tdn"><code>height</code></td>
+                    <td> <code>&lt;canvas&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;object&gt;</code>, <code>(en-US)</code>, <code>&lt;video&gt;</code>. </td>
+                    <td>Define uma altura para o elemento.</td>
+                </tr>
+            </table>
+
+            <P>Vale ressaltar que estes são apenas alguns dos varios atributos existentes que podem ser 
+                implementados ao código de acordo com cada necessidade.</P>
+
+            
+                <article >
+
+
+                    <div class="btna nextprev">
+                              <a href="index.html"><button class="light pbnt"> Anterior</button></a>
+                             
+                             <a href="2imaico.html"><button hret="1pri.html" class="depois pbnt">Proximo </button></a>
+                         </div>
+             
+                     </article>
+
+            
+        </article>
+
+        
+    </section>
+</main>
+<footer>
+    <h4>Principais Referências</h4>
+    
+     <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes">Atributos - HTML: Linguagem de Marcação de Hipertexto | MDN.</a></p>
+     <p><a href="https://www.homehost.com.br/blog/tutoriais/tags-html">MARQUES, R. Tags HTML: as principais tags para criar sua página HTML.</a></p>
+
+    <p style="margin-top: 50px;">HTML Tutorial - 2023</p>
+
+</footer>
+</html>
