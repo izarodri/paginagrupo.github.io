@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="iconme.png">
+    <title>Tabelas HTML</title>
+
+    <img src="logohtml.png" alt="Logo Pagina" >
+
+    
+        <input type="checkbox" id="checkbox">
+<a href="#"><label class="btn" for="checkbox">TUTORIAL</label></a>
+
+<div class="sidebar">
+    <ul>
+        <a href="index.html" ><li><i class="fa"></i>Introdução</li></a>
+        <a href="1pri.html"><li><i class="fa"></i>Primeiros Passos HTML</li></a>
+        <a href="2imaico.html"  ><li><i class="fa"></i>Estrutura Básica</li></a>
+        <a href="3hierar.html"><li><i class="fa"></i>Tags para Inserir Conteúdo</li></a>
+        <a href="5lis.html" class="active"><li><i class="fa"></i>Tabelas</li></a>
+        <a href="css.html"><li><i class="fa"></i>CSS Básico</li></a>
+        <a href="4forma.html"><li><i class="fa"></i>EXERCÍCIOS</li></a>
+      
+    </ul>
+</div>
+  
+</head>
+<main>
+    <section>
+        <article style="border: 30px; display: inline-block;">
+            <h1><b>TABELAS</b></h1>
+            <div class="hubt" >
+                <div class="ez-toc-title-container"></div>
+                <p class="ticon"><b>Conteúdo</b></p>
+                <span class="ez-toc-title-toggle"></span>
+                <nav class="conteudo">
+                    <ul>
+                        <li><a href="#1" class="conteudo">Tags para Inserir Tabelas</a></li>
+                        <li><a href="#2" class="conteudo">O Colgroup e Col</a></li>
+                    </ul>
+                </nav>
+            </div>
+         </article>
+
+         <article>
+            <h3 id="1">Tags para Inserir Tabelas</h3>
+            <p>A estrutura básica de uma tabela HTML é composta por três elementos principais: a tag <code>&lt;table&gt;</code> que indica o 
+                início da tabela, a tag <code>&lt;/table&gt;</code>que indica o final da tabela, e as células da tabela que são definidas
+                 pelas tags <code>&lt;tr&gt;</code> e <code>&lt;td&gt;</code>.</p>
+            <p>A tag <code>&lt;tr&gt;</code> é usada para definir cada linha da tabela, enquanto a tag <code>&lt;td&gt;</code> é usada para definir cada célula
+                 da tabela. Dentro das tags <code>&lt;td&gt;</code>, podemos adicionar o conteúdo que será exibido em cada célula da tabela. 
+                    Além disso, podemos usar outras tags para formatar e estilizar a tabela, como a tag <code>&lt;th&gt;</code> para 
+                    cabeçalhos de coluna, as tags <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>  e <code>&lt;tfoot&gt;</code> para definir as partes da tabela, e a 
+                    tag <code>&lt;caption&gt;</code> para adicionar um título à tabela.
+            <p>Abaixo está um exemplo: </p>
+
+            <pre>
+                <code>
+&lt;table border=&quot;1&quot;&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Idade&lt;/th&gt;
+        &lt;th&gt;Profissão&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dan&lt;/td&gt;
+        &lt;td&gt;16&lt;/td&gt;
+        &lt;td&gt;Estudante&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Iza&lt;/td&gt;
+        &lt;td&gt;26&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </code>
+            </pre>
+
+            <p>O resultado disso é o seguinte:</p>
+
+            <div class="exer">
+                <table border="1" style="background-color: white; color: black;">
+                    <tr>
+                        <th style="background-color: white; color: black;">Nome</th>
+                        <th style="background-color: white; color: black;">Idade</th>
+                        <th style="background-color: white; color: black;">Profissão</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: white; color: black;">Dan</td>
+                        <td style="background-color: white; color: black;">16</td>
+                        <td style="background-color: white; color: black;">Estudante</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: white; color: black;">Iza</td>
+                        <td style="background-color: white; color: black;">26</td>
+                        <td style="background-color: white; color: black;">Designer</td>
+                    </tr>
+                </table>
+            </div>
+
+                <p>Também é possivel o <code>&lt;th&gt;</code> para títulos verticais, ou seja, na primeira coluna. 
+                    Dessa forma, vamos para o seguinte exemplo de tabela HTML:</p>
+                    <pre>
+                        <code>
+&lt;table border=&quot;1&quot;&gt;
+   &lt;tr&gt;
+       &lt;th&gt;Nome:&lt;/th&gt;
+       &lt;td&gt;Eli&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;th&gt;Idade:&lt;/th&gt;
+       &lt;td&gt;45&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+O resultado deste exemplo ser&aacute;:
+                        </code>
+                    </pre>
+            <p>O resultado deste exemplo será:</p>
+            <div class="exer">
+                <table border="1" style="background-color: white; color: black;">
+                    <tr>
+                        <th style="background-color: white; color: black;">Nome:</th>
+                        <td style="background-color: white; color: black;">Eli</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: white; color: black;">Idade:</th>
+                        <td style="background-color: white; color: black;">45</td>
+                    </tr>
+                 </table>
+            </div>
+
+            <p>Quando se deseja inserir uma célula vazia em uma tabela HTML, é comum usar a tag <code>&lt;td&gt;</code> ou <code>&lt;th&gt;</code> sem adicionar
+                 qualquer conteúdo. Entretanto, essa abordagem pode não ser recomendada, pois alguns navegadores podem não
+                  conseguir ler adequadamente uma célula vazia. A solução mais apropriada para essa situação é utilizar a
+                   técnica de espaço, que consiste em adicionar a entidade &nbsp  dentro da célula. Isso criará um espaço 
+                   em branco dentro da célula e evitará problemas de compatibilidade com diferentes navegadores.
+            </p>
+
+            <pre>
+                <code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+        &lt;th&gt;Valor&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;R$10,00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+        &lt;td&gt;R$20,00&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </code>
+            </pre>
+
+            <p>Resultado:</p>
+
+            <div class="exer">
+                
+<table style="background-color: white; color: black;">
+    <tr>
+        <th style="background-color: white; color: black;">&nbsp;</th>
+        <th style="background-color: white; color: black;">Valor</th>
+    </tr>
+    <tr>
+        <td style="background-color: white; color: black;">Item 1</td>
+        <td style="background-color: white; color: black;">R$10,00</td>
+    </tr>
+    <tr>
+        <td style="background-color: white; color: black;">Item 2</td>
+        <td style="background-color: white; color: black;">R$20,00</td>
+    </tr>
+</table>
+            </div>
+
+            <p>Em certos casos, precisamos criar uma célula que abranja mais de uma linha ou coluna em uma tabela HTML.
+                 Para isso, podemos usar os atributos colspan e rowspan. O atributo colspan="x" permite mesclar colunas, 
+                 enquanto o atributo rowspan="x" permite mesclar linhas. Basta substituir o "x" pelo número de colunas ou 
+                 linhas que se deseja ocupar. Além disso, é possível mesclar ambos os atributos em uma única célula.
+            </p>
+            <p>Exemplo utilizando o colspan: </p>
+
+            <pre>
+                <code>
+&lt;table border=&quot;1&quot;&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th colspan=&quot;2&quot;&gt;Telefones&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;JP&lt;/td&gt;
+        &lt;td&gt;1111-1111&lt;/td&gt;
+        &lt;td&gt;2222-2222&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Iza&lt;/td&gt;
+        &lt;td&gt;3333-3333&lt;/td&gt;
+        &lt;td&gt;4444-4444&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </code>
+            </pre>
+            <p>Resultado:</p>
+
+            <div class="exer">
+                <table border="1" style="background-color: white; color: black;">
+                    <tr>
+                        <th style="background-color: white; color: black;">Nome</th>
+                        <th style="background-color: white; color: black;" colspan="2">Telefones</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: white; color: black;">JP</td>
+                        <td style="background-color: white; color: black;">1111-1111</td>
+                        <td style="background-color: white; color: black;">2222-2222</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: white; color: black;">Iza</td>
+                        <td style="background-color: white; color: black;">3333-3333</td>
+                        <td style="background-color: white; color: black;">4444-4444</td>
+                    </tr>
+                </table>
+            </div>
+                <p>Exemplo utilizando o rowspan:</p>
+                <pre>
+                    <code>
+&lt;table border=&quot;1&quot;&gt;
+&lt;tr&gt;
+  &lt;th&gt;Primeiro Nome:&lt;/th&gt;
+  &lt;td&gt;Ted&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th rowspan=&quot;2&quot;&gt;Telefone:&lt;/th&gt;
+  &lt;td&gt;8888-8888&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;9999-9999&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+                    </code>
+                </pre>
+                <p>Resultado:</p>
+                <div class="exer">
+                    <table border="1" style="background-color: white; color: black;">
+                        <tr>
+                          <th style="background-color: white; color: black;">Primeiro Nome:</th>
+                          <td style="background-color: white; color: black;">Ted</td>
+                        </tr>
+                        <tr>
+                          <th rowspan="2" style="background-color: white; color: black;">Telefone:</th>
+                          <td style="background-color: white; color: black;">8888-8888</td>
+                        </tr>
+                        <tr>
+                          <td style="background-color: white; color: black;"> 9999-9999</td>
+                        </tr>
+                        </table>
+                </div>
+
+                <p>Para incluir um título em uma tabela HTML, utilizamos a tag <code>&lt;caption&gt;</code> <code>&lt;/caption&gt;</code>. Ao contrário dos demais elementos da tabela,
+                     a tag <code>&lt;caption&gt;</code> não é composta por células e, portanto, fica localizada acima da tabela, como um título descritivo.</p>
+                    <p>Exemplo:</p>
+                    <pre>
+                        <code>
+ &lt;table border=&quot;1&quot;&gt;
+    &lt;caption&gt;Exemplo de T&iacute;tulo&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Sobrenome&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Iza&lt;/td&gt;
+        &lt;td&gt;Bela&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dan&lt;/td&gt;
+        &lt;td&gt;Silva&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                        </code>
+                    </pre>
+                    <p>Resultado:</p>
+                    <div class="exer">
+                        <table border="1" style="background-color: white; color: black;">
+                            <caption >Exemplo de Título</caption>
+                            <tr>
+                                <th style="background-color: white; color: black;">Nome</th>
+                                <th style="background-color: white; color: black;">Sobrenome</th>
+                            </tr>
+                            <tr>
+                                <td style="background-color: white; color: black;">Iza</td>
+                                <td style="background-color: white; color: black;">Bela</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: white; color: black;">Dan</td>
+                                <td style="background-color: white; color: black;">Silva</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+         </article>
+         
+
+         <article>
+           
+            <h3 id="2">O Colgroup e Col</h3>
+         <p>Muitos dos atributos de tabela em HTML são agora considerados obsoletos. Consequentemente, a formatação e
+             estilização de tabelas deve ser realizada por meio de CSS. Para esse propósito, existe um elemento-chave chamado <code>&lt;colgroup&gt;</code><code>&lt;/colgroup&gt;</code>, que permite a criação de um grupo de colunas. Dessa forma, várias colunas 
+             podem ser estilizadas de uma só vez. Para definir cada grupo de coluna, utilizamos as tags <code>&lt;/col&gt;</code> .</p>
+             <p>Exemplo aplicando o CSS às classes que utilizaremos nas <code>&lt;col&gt;</code> <col>:</p>
+             <pre>
+                <code>
+ &lt;style&gt;
+    .vermelho{
+        background-color: red;
+    }
+    .amarelo{
+        background-color: yellow;
+    }
+    .azul{
+        background-color: blue;
+    }
+&lt;/style&gt;
+
+&lt;table border=&quot;1&quot;&gt;
+  &lt;colgroup&gt;
+    &lt;col class=&quot;vermelho&quot;&gt;
+    &lt;col class=&quot;amarelo&quot;&gt;
+    &lt;col class=&quot;azul&quot;&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+    &lt;th&gt;Profissao&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;JP&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+    &lt;td&gt;Estudante&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eli&lt;/td&gt;
+    &lt;td&gt;26&lt;/td&gt;
+    &lt;td&gt;Escritor&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+                </code>
+             </pre>
+             <p>Resultado:</p>
+             <div class="exer">
+                <style>
+                    .vermelho{
+                        background-color: red;
+                    }
+                    .amarelo{
+                        background-color: yellow;
+                    }
+                    .azul{
+                        background-color: blue;
+                    }
+                </style>
+                
+                <table border="1" style="background-color: white; color: black;">
+                  <colgroup>
+                    <col class="vermelho">
+                    <col class="amarelo">
+                    <col class="azul">
+                  </colgroup>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Profissao</th>
+                  </tr>
+                  <tr>
+                    <td>JP</td>
+                    <td>22</td>
+                    <td>Estudante</td>
+                  </tr>
+                  <tr>
+                    <td>Eli</td>
+                    <td>26</td>
+                    <td>Escritor</td>
+                  </tr>
+                </table>
+                
+             </div>
+
+         </article>
+
+        <article >
+       <div class="btna nextprev">
+                <a href="3hierar.html"><button class="light pbnt"> Anterior</button></a>
+                <a href="css.html"><button hret="1pri.html" class="depois pbnt">Proximo</button></a>
+            </div>
+
+        </article>
+
+        
+    </section>
+</main>
+<footer>
+    <h4>Principais Referências</h4>
+    
+     <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes">Atributos - HTML: Linguagem de Marcação de Hipertexto | MDN.</a></p>
+     <p><a href="https://www.homehost.com.br/blog/tutoriais/tags-html">MARQUES, R. Tags HTML: as principais tags para criar sua página HTML.</a></p>
+
+    <p style="margin-top: 50px;">HTML Tutorial - 2023</p>
+</footer>
+</html>

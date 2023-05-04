@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="iconme.png">
+    <title>CSS Básico</title>
+
+    <img src="logohtml.png" alt="Logo Pagina" >
+
+    
+        <input type="checkbox" id="checkbox">
+<a href="#"><label class="btn" for="checkbox">TUTORIAL</label></a>
+
+<div class="sidebar">
+    <ul>
+        <a href="index.html" ><li><i class="fa"></i>Introdução</li></a>
+        <a href="1pri.html"><li><i class="fa"></i>Primeiros Passos HTML</li></a>
+        <a href="2imaico.html"><li><i class="fa"></i>Estrutura Básica</li></a>
+        <a href="3hierar.html"><li><i class="fa"></i>Tags para Inserir Conteúdo</li></a>
+        <a href="5lis.html"><li><i class="fa"></i>Tabelas</li></a>
+        <a href="css.html"  class="active"><li><i class="fa"></i>CSS Básico</li></a>
+        <a href="4forma.html" ><li><i class="fa"></i>EXERCÍCIOS</li></a>
+        
+        
+       
+    </ul>
+</div>
+  
+</head>
+
+<main>
+<section>
+    <article style="border: 30px; display: inline-block;">
+            <h1><b>CSS BÁSICO</b></h1>
+            <div class="hubt" >
+                <div class="ez-toc-title-container"></div>
+                <p class="ticon"><b>Conteúdo</b></p>
+                <span class="ez-toc-title-toggle"></span>
+                <nav class="conteudo">
+                    <ul>
+                        <li><a href="#1" class="conteudo">Anatomia de um conjunto de regras CSS</a></li>
+                        <li><a href="#2" class="conteudo">Elementos</a></li>
+                        <li><a href="#3" class="conteudo">Tipos de Seletores</a></li>
+                        <li><a href="#4" class="conteudo">Caixas</a></li>
+    </article>
+
+    <article>
+        <h3 id="1">Anatomia de um conjunto de regras CSS</h3>
+        <p>Assim como o HTML, o CSS não é realmente uma linguagem de programação. Também não é uma linguagem de marcação — é uma linguagem de folhas de estilos. Isso significa que o CSS permite aplicar estilos seletivamente a elementos em documentos HTML.</p>
+       <center>
+        <img  src="css-declaration-small.png" alt="Estrutura Css"></center>
+        <p>Toda essa estrutura é chamada de conjunto de regras (mas geralmente usamos o termo 
+            "regra", por ser mais curto). Note os nomes das partes individuais:</p>
+        <ul>
+            <li>Seletor <code>(sector)</code></li>
+            <p>O nome do elemento HTML no começo do conjunto de regras. Ele seleciona o(s) elemento(s) a serem estilizados (nesse caso,
+                 elementos <code>&lt;p&gt;</code>). Para dar estilo a um outro elemento, é só mudar o seletor.</p>
+            <li>Declaração <code>(Declaration)</code></li>
+            <p>Uma regra simples como <code>color: pink;</code> especificando quais das propriedades do elemento você quer estilizar.</p>
+            <li>Propriedades <code>(Property)</code></li>
+            <p>Forma pela qual você estiliza um elemento HTML. (Nesse caso, <code>color</code> é uma propriedade dos
+                 elementos <code>&lt;p&gt;</code>.) Em CSS, você escolhe quais propriedades você deseja afetar com sua regra.</p>
+            <li>Valor da propriedade <code>(Property value)</code></li>
+            <p>À direita da propriedade, depois dos dois pontos, nós temos o valor de propriedade, que escolhe uma dentre muitas 
+                aparências possíveis para uma determinada propriedade (há muitos valores <code>color</code>(cor) além do <code>pink</code>(rosa)).</p>
+        </ul>
+
+        <p><b>Demais Importâncias</b></p>
+        <ul>
+            <li>Cada linha de comando deve ser envolvida em chaves (<code>{}</code>).</li>
+            <li>Dentro de cada conjunto de regras, você deve usar um ponto e vírgula (<code>;</code>) para separar cada declaração.</li>
+            <li>Dentro de cada declaração, você deve usar dois pontos (<code>:</code>) para separar a propriedade de seus valores.</li>
+        </ul>
+
+    </article>
+
+    <article>
+        <h3 id="2">Elementos</h3>
+        <p>Podemos modificar múltiplos valores de propriedades de uma vez, você deve escrevê-los separados por ponto e vírgula, desse modo:</p>
+        <pre>
+            <code>
+ p {
+       color: red;
+       width: 500px;
+      border: 1px solid black;
+    }
+            </code>
+        </pre>
+        <p>Você também pode selecionar vários tipos de elementos e aplicar um único conjunto de regras a todos eles. Inclua múltiplos seletores separados por vírgulas.</p>
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+p, li, h1 {
+     color: red;
+}
+            </code>
+        </pre>
+
+    </article>
+
+    <article>
+        <h3 id="3">Tipos de Seletores</h3>
+        <p>Por possuir uma grande variedade de seletores, abaixo é mostrado apenas os seletores de elementos.</p>
+        
+
+        <table>
+            <tr>
+                <th>Nome do seletor</th>
+                <th>Nome do seletor</th>
+                <th>Exemplo</th>
+            </tr>
+            <tr>
+                <td>Seletor de classe</td>
+                <td>O(s) elemento(s) na página com a classe específicada (várias instâncias de classe podem aparecer em uma página).</td>
+                <td><code>.my-class</code > Seleciona <code>&lt;p class=&quot;my-class&quot;&gt;</code> e  <code>&lt;a class=&quot;my-class&quot;&gt;</code></td>
+            </tr>
+            <tr>
+                <td>Seletor de pseudo-classe</td>
+                <td>O(s) elemento(s) específicado(s), mas somente quando estiver no estado especificado. Ex.: com o mouse sobre ele.</td>
+                <td><code>a:hover</code> Seleciona <code>&lt;a&gt;</code>, mas somente quando o mouse está em cima do link.</td>
+            </tr>
+            <tr>
+                <td>Seletor de elemento (às vezes, chamado tag ou seletor de tipo)</td>
+                <td>Todos os elementos HTML de determinado tipo.</td>
+                <td><code>p</code> Seleciona <code>&lt;p&gt;</code></td>
+            </tr>
+        </table>
+        <p>Vale relembrar que há muito mais seletores para explorar.</p>
+    </article>
+
+    <article>
+        <h3 id="4">Caixas</h3>
+        <p>O layout CSS é baseado principalmente no modelo de caixas, indicando seu tamanho, cor, posição, etc. Cada um dos blocks que ocupam espaço na sua página tem propriedades como essas:</p>
+         <p><code>padding</code> - O espaço ao redor do conteúdo (ex.: ao redor do texto de um parágrafo).</p>
+         <p><code>margin</code> - O espaço externo a um elemento</p>
+         <p><code>border</code> - A linha sólida do lado de fora do padding. </p>
+
+         <center> <img src="margi.png" alt="Estrutura De Caixas"></center>
+
+         <p>Destacando os mais usados dessa seção:</p>
+         <ul>
+            <li><code>width</code>(largura de um elemento).</li>
+            <li><code>background-color</code>, a cor atrás do conteúdo de um elemento e do padding.</li>
+            <li><code>color</code>, a cor do conteúdo de um elemento (geralmente texto).</li>
+            <li><code>text-shadow</code>: cria uma sombra no texto dentro de um elemento.</li>
+            <li><code>display</code>: define a maneira de dispor um elemento (não se preocupe com isso ainda).</li>
+         </ul>
+
+
+    </article>
+
+
+    <article >
+        <div class="btna nextprev">
+            <a href="5lis.html"><button class="light pbnt"> Anterior</button></a>
+            <a href="4forma.html"><button class="depois pbnt">Proximo</button></a>
+             </div>
+         </article>
+</section>
+</main>
+
+<footer>
+    <h4>Principais Referências</h4>
+    
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes">Atributos - HTML: Linguagem de Marcação de Hipertexto | MDN.</a></p>
+    <p><a href="https://www.homehost.com.br/blog/tutoriais/tags-html">MARQUES, R. Tags HTML: as principais tags para criar sua página HTML.</a></p>
+     <p><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/CSS_basics#selecionando_m>">CSS básico - Aprendendo desenvolvimento web | MDN.</a></p>
+   <p style="margin-top: 50px;">HTML Tutorial - 2023</p>
+</footer>
