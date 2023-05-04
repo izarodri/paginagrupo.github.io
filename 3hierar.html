@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="iconme.png">
+    <title>Tags HTML</title>
+
+    <img src="logohtml.png" alt="Logo Pagina" >
+
+    
+        <input type="checkbox" id="checkbox">
+<a href="#"><label class="btn" for="checkbox">TUTORIAL</label></a>
+
+<div class="sidebar">
+    <ul>
+        <a href="index.html" ><li><i class="fa"></i>Introdução</li></a>
+        <a href="1pri.html"><li><i class="fa"></i>Primeiros Passos HTML</li></a>
+        <a href="2imaico.html"  ><li><i class="fa"></i>Estrutura Básica</li></a>
+        <a href="3hierar.html" class="active"><li><i class="fa"></i>Tags para Inserir Conteúdo</li></a>
+        <a href="5lis.html"><li><i class="fa"></i>Tabelas</li></a>
+        <a href="css.html"><li><i class="fa"></i>CSS Básico</li></a>
+        <a href="4forma.html"><li><i class="fa"></i>EXERCÍCIOS</li></a>
+        
+        
+    </ul>
+</div>
+  
+</head>
+<main>
+    <section>
+        <article style="border: 30px; display: inline-block;">
+            <h1><b>TAGS DE CONTEÚDO</b></h1>
+
+            <div class="hubt" >
+                <div class="ez-toc-title-container"></div>
+                <p class="ticon"><b>Conteúdo</b></p>
+                <span class="ez-toc-title-toggle"></span>
+                <nav class="conteudo">
+                    <ul>
+                        <li><a href="#1" class="conteudo">Tags de Título</a></li>
+                        <li><a href="#2" class="conteudo">Tags de Texto</a></li>
+                        <li><a href="#3" class="conteudo">Tag para Inserir links</a></li>
+                        <li><a href="#4" class="conteudo">Tags para Inserir Multimídias</a></li>
+                        <li><a href="#5" class="conteudo">Tags para Adicionar Listas</a></li>
+                        <li><a href="#6" class="conteudo">Tags de estilos e scripts</a></li>
+                        
+                    </ul>
+                </nav>
+             </div>
+
+           
+        </article>
+
+        <article>
+            <h3 id="1">Tags de Título</h3>
+            <p>Utilizar as tags de forma adequada é fundamental para organizar o conteúdo da página de forma clara e semântica. Existem duas tags HTML que são utilizadas para definir o título de uma página: a tag <code>&lt;title&gt;</code> e a tag <code>&lt;h1&gt;</code>. </p>
+            <p>A tag <code>&lt;title&gt;</code> é utilizada dentro do cabeçalho da página, entre as tags <code>&lt;head&gt;</code> e <code>&lt;/head&gt;</code>. O texto 
+                inserido dentro desta tag será exibido na aba ou janela do navegador, e é importante para o SEO da página,
+                 pois é utilizado pelos motores de busca para indexar o conteúdo. Segue o exemplo abaixo:</p>
+            
+                 <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;T&iacute;tulo da minha p&aacute;gina&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...
+  &lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                 </pre>
+            <p>Já a tag <code>&lt;h1&gt;</code> é utilizada para definir o título principal da página, geralmente no início do conteúdo principal. 
+                Ela é utilizada para indicar ao usuário e aos motores de busca qual é o tema principal da página. Segue o exemplo abaixo:
+            </p>
+
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;T&iacute;tulo da minha p&aacute;gina&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;T&iacute;tulo principal da minha p&aacute;gina&lt;/h1&gt;
+     ...
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+
+            <p>Vale ressaltar que esta tag pode variar de tamanho de acordo com o número colocado nela da seguinte forma: </p>
+            <pre>
+                <code>
+&lt;h1&gt;&lt;/h1&gt; -  Título de maior valor hierárquico
+
+ &lt;h2&gt;&lt;/h2&gt;
+ &lt;h3&gt;&lt;/h3&gt;
+ &lt;h4&gt;&lt;/h4&gt;
+ &lt;h5&gt;&lt;/h5&gt;
+ &lt;h6&gt;&lt;/h6&gt; - Título de menor valor hierárquico
+</code>
+            </pre>
+        </article>
+
+        <article>
+            <h3 id="2">Tags de Texto</h3>
+            <p>As tags de conteúdo textual são responsáveis por definir elementos de texto, fontes, parágrafos, spans, além de permitir quebras de linha e outras formatações. Abaixo, apresentamos algumas das principais tags utilizadas para esse fim:</p>
+             <ul>
+                <li><code>&lt;p&gt;&lt;/p&gt;</code>– Principal tag de texto, compõe um parágrafo;</li>
+                <li><code>&lt;span&gt;&lt;/span&gt;</code>– Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um container;</li>
+                <li><code>&lt;pre&gt;&lt;/pre&gt;</code>– Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;</li>
+                <li><code>&lt;b&gt;&lt;/b&gt;</code>– Transforma o conteúdo em negrito;</li>
+                <li><code>&lt;i&gt;&lt;/i&gt;</code>– Transforma o conteúdo em itálico;</li>
+                <li><code>&lt;br/&gt;</code>– Essa tag não necessita de fechamento, ela executa a função de quebra de linha.</li>
+                <li><code>&lt;hr/&gt;</code> – Essa tag não necessita de fechamento, ela forma uma linha horizontal.</li>
+             </ul>
+
+        </article>
+
+        <article>
+            <h3 id="3">Tag para Inserir links</h3>
+            <p>A tag HTML para hiperlink tem como função conectar diferentes documentos, tanto na mesma página quanto em outras páginas de diferentes domínios. Esta tag é considerada uma das bases mais importantes para a estrutura da web como a conhecemos hoje em dia.</p>
+            <p>Para criar um link em seu documento HTML, você pode utilizar a tag <code>&lt;a&gt;&lt;/a&gt;</code> e o atributo "href". Por exemplo, se você quiser adicionar um link em seu texto que redirecione para a página inicial do Google:
+            </p>
+            <pre>
+                <code>
+&lt;p&gt;Para acessar o Google, 
+      &lt;a href=&quot;https://www.google.com&quot;&gt;clique aqui.&lt;/a&gt;&lt;/p&gt;
+                </code>
+            </pre>
+
+            <p>Resultado na página:</p>
+
+            <p>Para acessar o Google, <a href="https://www.google.com">clique aqui.</a></p>
+        </article>
+
+        <article>
+            <h3 id="4">Tags para Inserir Multimídias</h3>
+            <p>As tags de multimídias servem para colocar mídias na página, como imagens, vídeos, áudios, iframes e outros tipos de mídias. A seguir estão as principais tags utilizadas:</p>
+            <ul>
+                <li>
+                    <p> <code>&lt;img&gt;</code> - Esta tag é utilizada para inserir imagens em um documento HTML. Ela é um elemento vazio, ou seja, não possui um elemento de fechamento, e utiliza o atributo "src" para especificar o caminho do arquivo de imagem que será exibido na página. Além disso, a tag <img> também permite a inclusão de outros atributos, como "alt" para adicionar uma descrição da imagem e "width" e "height" para definir as dimensões da imagem exibida na página. </p>
+                    <p>Exemplo:</p>
+                    <pre>
+                        <code>
+&lt;img src="imagens/imagem1.jpg" 
+         alt="imagem 1 da minha página"&gt;
+                        </code>
+                    </pre>
+                </li>
+                
+                <li>
+                    <p><code>&lt;video&gt;</code> - É utilizada para inserir vídeos em um documento HTML. Ela suporta diferentes formatos de arquivos de vídeo, 
+                        como MP4, WebM e Ogg, e permite a inclusão de controles de reprodução, como botões de play, pause e volume. Além 
+                        disso, a tag <code>&lt;video&gt;</code> também permite a definição de atributos, como "width" e "height" para especificar as dimensões 
+                            do vídeo na página, "poster" para adicionar uma imagem de preview do vídeo e "autoplay" para definir se o vídeo 
+                            deve ser reproduzido automaticamente quando a página é carregada.</p>
+                    <p>Para permitir o controle de reprodução do vídeo, é necessário incluir alguns atributos na tag <code>&lt;video&gt;</code>, sendo o mais importante deles o 
+                        "controls". Em seguida, é preciso adicionar a tag <code>&lt;source&gt;</code> com os atributos "src" e "type", que especificam o local e 
+                        o tipo do arquivo de vídeo, respectivamente. É recomendável incluir várias opções de source para o mesmo vídeo, a fim 
+                        de garantir compatibilidade com diferentes navegadores. Por fim, é possível adicionar uma mensagem personalizada para 
+                        os casos em que o navegador não suporta a tag <code>&lt;video&gt;</code>.
+                        <p>Exemplo:</p>
+                        <pre>
+                            <code> 
+&lt;video controls&gt;
+            &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+            &lt;source src=&quot;video.ogg&quot; type=&quot;video/ogg&quot;&gt;
+            Seu navegador não possui suporte para Vídeos.
+&lt;/video&gt;
+                            </code>
+                        </pre>
+                    </p>
+                </li>
+                
+                <li>
+                    <p><code>&lt;audio&gt;</code> - A tag <code>&lt;audio&gt;</code> funciona da mesma forma que a tag <code>&lt;video&gt;</code>, portanto, é utilizada a tag <source> dentro dela.</p>
+                    <p>Exemplo:</p>
+                    <pre>
+                        <code>
+&lt;audio controls&gt;
+            &lt;source src=&quot;musica.ogg&quot; type=&quot;audio/ogg&quot;&gt;
+            &lt;source src=&quot;musica.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+            Seu navegador não possui suporte para áudio.
+&lt;/audio&gt;
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p><code>&lt;iframe&gt;</code> - É utilizada para incorporar conteúdo de outras fontes em uma página HTML. Por exemplo, é possível 
+                        incorporar um mapa do Google Maps, um vídeo do YouTube ou até mesmo uma página inteira de outro site. Para isso, 
+                        basta especificar o URL do conteúdo a ser incorporado no atributo "src" da tag <code>&lt;iframe&gt;</code>. Além disso, é possível 
+                            definir outras propriedades, como altura, largura e borda, para personalizar a aparência do iframe. No 
+                            entanto, é importante ter cuidado ao incorporar conteúdo de fontes externas, pois pode haver riscos de 
+                            segurança e de privacidade.</p>
+                    <p>Exemplo:</p>
+                    <pre>
+                        <code>
+&lt;iframe src=&quot;https://www.homehost.com.br&quot;&gt;
+            &lt;p&gt;Seu navegador não possui suporte para iFrames&lt;/p&gt;
+&lt;/iframe&gt;
+                        </code>
+                    </pre>
+                </li>
+            </ul>
+
+        </article>
+
+
+        <article>
+        
+            <h3 id="5">Tags para Adicionar Listas</h3>
+            <p>Para criar uma lista em HTML, podemos utilizar uma lista ordenada, ou uma lista não ordenada, e também uma 
+                lista de definição. Em seguida, dentro da lista, podemos incluir os elementos das listas. </p>
+            <ul>
+                <li>
+                    <p>Lista ordenada: <code>&lt;ol&gt;</code> (abre a lista ordenada) e <code>&lt;/ol&gt;</code> (fecha a lista ordenada). Cada item da lista é indicado pela tag
+                         <code>&lt;li&gt;</code>, que deve ser colocada dentro das tags <code>&lt;ol&gt;</code> e <code>&lt;/ol&gt;</code></p>
+                    <p>Exemplo:</p>
+                    <pre>
+                        <code>
+&lt;p&gt;Minha lista ordenada:&lt;/p&gt;
+        &lt;ol&gt;
+            &lt;li&gt;item 1&lt;/li&gt;
+            &lt;li&gt;item 2&lt;/li&gt;
+            &lt;li&gt;item 3&lt;/li&gt;
+        &lt;/ol&gt;
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p>Lista não ordenada: <code>&lt;ul&gt;</code> (abre a lista não ordenada) e <code>&lt;/ul&gt;</code> (fecha a lista não ordenada). Cada item da lista
+                         também é indicado pela tag <code>&lt;li&gt;</code>, que deve ser colocada dentro das tags <code>&lt;ul&gt;</code> e <code>&lt;/ul&gt;</code>.
+                    </p>
+                    <p>Exemplo:</p>
+                    <pre>
+                        <code>
+&lt;p&gt;Minha lista não ordenada:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;item 1&lt;/li&gt;
+            &lt;li&gt;item 2&lt;/li&gt;
+            &lt;li&gt;item 3&lt;/li&gt;
+        &lt;/ul&gt;
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p>Lista de definição: <code>&lt;dl&gt;</code> (abre a lista de definição) e <code>&lt;/dl&gt;</code> (fecha a lista de definição). Cada item da lista é 
+                        composto por dois elementos: um termo, indicado pela tag <code>&lt;dt&gt;</code>, e sua definição, indicada pela tag <code>&lt;dd&gt;</code>. Ambas devem 
+                            ser colocadas dentro das tags <code>&lt;dl&gt;</code> e <code>&lt;/dl&gt;</code>.</p>
+                    <p>Exemplo:</p>
+                    <pre>
+                        <code> 
+&lt;dl&gt;
+    &lt;dt&gt;linguagem 1&lt;/dt&gt;
+        &lt;dd&gt;HTML (HyperText Markup Language)&lt;/dd&gt;
+     &lt;dt&gt;linguagem 2&lt;/dt&gt;
+        &lt;dd&gt;CSS (Cascading Style Sheets)&lt;/dd&gt;
+    &lt;dt&gt;linguagem 3&lt;/dt&gt;
+            &lt;dd&gt;JS (JavaScript)&lt;/dd&gt;
+&lt;/dl&gt;</code>
+                    </pre>
+                </li>
+            </ul>
+
+        </article>
+
+        <article>
+            <h3 id="6">Tags de estilos e scripts</h3>
+            <p>Por fim, duas tags que  não podem ser deixadas de lado: <code>&lt;style&gt;</code> e <code>&lt;script&gt;</code></p>
+            <p>A tag <code>&lt;style&gt;</code> deve ser inserida no cabeçalho do documento HTML, dentro das tags <code>&lt;head&gt;&lt;/head&gt;</code>. Nela, é possível incluir 
+            todo o seu código CSS, que define os estilos de sua página</p>
+            <p>
+                Já a tag <code>&lt;script&gt;</code> é usada para incluir código JavaScript em seu HTML e pode ser inserida em qualquer parte do documento, 
+                embora seja recomendado colocá-la antes da tag de fechamento <code>&lt;/body&gt;</code>. Assim, você pode incluir nela seu código JavaScript para tornar sua página interativa e dinâmica.
+
+            </p>
+        </article>
+
+        <article >
+            <div class="btna nextprev">
+                     <a href="2imaico.html"><button class="light pbnt"> Anterior</button></a>
+                     <a href="5lis.html"><button hret="1pri.html" class="depois pbnt">Proximo</button></a>
+                 </div>
+             </article>
+
+        
+    </section>
+</main>
+<footer>
+    <h4>Principais Referências</h4>
+    
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes">Atributos - HTML: Linguagem de Marcação de Hipertexto | MDN.</a></p>
+    <p><a href="https://www.homehost.com.br/blog/tutoriais/tags-html">MARQUES, R. Tags HTML: as principais tags para criar sua página HTML.</a></p>
+
+   <p style="margin-top: 50px;">HTML Tutorial - 2023</p>
+</footer>
+</html>
